@@ -1,0 +1,38 @@
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 3rem auto 0 auto;
+}
+
+.input,
+.button {
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+}
+
+.input {
+  width: 50%;
+  padding: 0.5rem;
+  font-size: inherit;
+  color: white;
+  margin-left: 2.3rem;
+}
+
+.input:focus {
+  outline: 1px solid orange;
+}
+
+.button {
+  padding: 0.6rem;
+  margin-left: 5px;
+  color: orange;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  outline: 1px solid orange;
+}

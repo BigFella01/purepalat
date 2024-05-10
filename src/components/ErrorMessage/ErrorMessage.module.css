@@ -1,0 +1,12 @@
+.messageContainer {
+  width: 100%;
+  margin-top: 2rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.message {
+  color: white;
+  text-transform: uppercase;
+}

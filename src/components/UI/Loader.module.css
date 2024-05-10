@@ -1,0 +1,12 @@
+.loaderContainer {
+  width: 100%;
+  margin-top: 10rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.loaderMessage {
+    color: white;
+    text-transform: uppercase;
+}

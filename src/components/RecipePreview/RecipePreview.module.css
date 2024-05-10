@@ -1,0 +1,38 @@
+.recipePreview {
+  text-decoration: none;
+}
+
+.recipePreviewContainer {
+  border: 1px solid grey;
+  padding: 8px;
+}
+
+.recipePreviewName {
+  color: white;
+  text-align: center;
+}
+
+.recipePreviewName:hover,
+.recipePreviewName:focus {
+  color: orange;
+  text-decoration: none;
+}
+
+.recipePreviewImg {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.nutritionInfoContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+}
+
+.nutritionInfo {
+  color: orange;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: lighter
+}

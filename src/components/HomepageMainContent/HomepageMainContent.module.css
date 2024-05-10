@@ -1,0 +1,31 @@
+.page {
+    text-align: center;
+    margin-top: 10rem;
+    padding: 0 1rem;
+}
+
+.page > * {
+  color: white;
+}
+
+.pageTitle {
+    font-size: 2rem;
+}
+
+.pageText {
+    margin: 1rem 0 2rem 0;
+}
+
+.pageLink {
+    text-decoration: none;
+    background-color: orange;
+    color: black;
+    border-radius: 15px;
+    padding: 10px 5px;
+    transition: background-color 200ms ease-in;
+}
+
+.pageLink:hover,
+.pageLink:focus {
+    background-color: darkorange;
+}

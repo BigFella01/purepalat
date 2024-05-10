@@ -1,0 +1,77 @@
+.detailsContainer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.title {
+  margin: 2rem 0;
+  color: orange;
+  text-align: center;
+}
+
+.recipeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.ingredientList {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.ingredient {
+  color: white;
+  margin: 1rem 0;
+}
+
+.infoFlex {
+  margin: 5rem 0;
+  padding: 2rem;
+}
+
+.infoFlex > * {
+  margin: 0 auto;
+}
+
+.nutrientInfoPiece {
+  display: flex;
+  justify-content: space-between;
+
+  outline: 1px solid grey;
+  padding: 5px;
+}
+
+.nutrientInfoPiece span {
+  color: white;
+}
+
+@media (min-width: 520px) {
+  .recipeContainer {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 650px) {
+  .infoFlex {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+  }
+
+  .infoFlex > * {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+

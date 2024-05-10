@@ -1,0 +1,68 @@
+/* when isFiltering, we want to translate the filter
+into view. Otherwise, we want to keep it off the screen */
+
+.recipeFilter {
+  background: black;
+  max-width: 340px;
+  border-radius: 10px;
+  padding: 1rem;
+
+  position: absolute;
+  top: 0;
+  transition: transform 200ms ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+.recipeFilter > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+}
+
+.hidden {
+  transform: translateX(-100%);
+}
+
+label {
+  color: white;
+  margin-right: 1rem;
+}
+
+input {
+  background-color: #2a2a2a;
+  color: orange;
+}
+
+select {
+  background-color: #2a2a2a;
+  color: orange;
+}
+
+select > * {
+  color: orange;
+}
+
+.closeFilterBtn {
+  color: orange;
+  background: none;
+  border: none;
+  margin: 0 0 0 auto;
+  cursor: pointer;
+}
+
+.closeFilterBtn:hover,
+.closeFilterBtn:focus {
+  outline: 1px solid orange;
+}
+
+@media (min-width: 300px) {
+  .recipeFilter > * {
+    flex-direction: row;
+  }
+}

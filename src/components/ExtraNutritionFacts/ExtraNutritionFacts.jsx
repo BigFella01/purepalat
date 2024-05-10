@@ -1,0 +1,139 @@
+import styles from './ExtraNutritionFacts.module.css'
+
+// energy, monounsaturated, polyunsaturated,
+// folic acid, folate equivalent (total), potassium, magnesium,
+// niacin, phosphorus, riboflavin, thiamin, vitaminE,
+// vitaminB6, vitaminB12, vitaminD, vitaminK, zinc
+
+function ExtraNutritionFacts({ nutrients }) {
+  return (
+    <div>
+      <table className={styles.table}>
+        <caption>Additional Nutrition Info</caption>
+        <tbody>
+          <tr>
+            <td>{nutrients.ENERC_KCAL.label}</td>
+            <td>
+              {Math.round(nutrients.ENERC_KCAL.quantity)}
+              {nutrients.ENERC_KCAL.unit}
+            </td>
+          </tr>
+          <tr>
+            <td>{nutrients.FAMS.label}</td>
+            <td>
+              {Math.round(nutrients.FAMS.quantity)}
+              {nutrients.FAMS.unit}
+            </td>
+          </tr>
+          <tr>
+            <td>{nutrients.FAPU.label}</td>
+            <td>
+              {Math.round(nutrients.FAPU.quantity)}
+              {nutrients.FAPU.unit}
+            </td>
+          </tr>
+          <tr>
+            <td>{nutrients.FOLAC.label}</td>
+            <td>
+              {Math.round(nutrients.FOLAC.quantity)}
+              {nutrients.FOLAC.unit}
+            </td>
+          </tr>
+          <tr>
+            <td>{nutrients.FOLDFE.label}</td>
+            <td>
+              {Math.round(nutrients.FOLDFE.quantity)}
+              {nutrients.FOLDFE.unit}
+            </td>
+          </tr>
+          <tr>
+            <td>{nutrients.K.label}</td>
+            <td>
+              {Math.round(nutrients.K.quantity)}
+              {nutrients.K.unit}
+            </td>
+          </tr>
+          <tr>
+            <td>{nutrients.MG.label}</td>
+            <td>
+              {Math.round(nutrients.MG.quantity)}
+              {nutrients.MG.unit}
+            </td>
+          </tr>
+          <tr>
+            <td>{nutrients.NIA.label}</td>
+            <td>
+              {Math.round(nutrients.NIA.quantity)}
+              {nutrients.NIA.unit}
+            </td>
+          </tr>
+          <tr>
+            <td>{nutrients.P.label}</td>
+            <td>
+              {Math.round(nutrients.P.quantity)}
+              {nutrients.P.unit}
+            </td>
+          </tr>
+          <tr>
+            <td>{nutrients.RIBF.label}</td>
+            <td>
+              {Math.round(nutrients.RIBF.quantity)}
+              {nutrients.RIBF.unit}
+            </td>
+          </tr>
+          <tr>
+            <td>{nutrients.THIA.label}</td>
+            <td>
+              {Math.round(nutrients.THIA.quantity)}
+              {nutrients.THIA.unit}
+            </td>
+          </tr>
+          <tr>
+            <td>{nutrients.TOCPHA.label}</td>
+            <td>
+              {Math.round(nutrients.TOCPHA.quantity)}
+              {nutrients.TOCPHA.unit}
+            </td>
+          </tr>
+          <tr>
+            <td>{nutrients.VITB6A.label}</td>
+            <td>
+              {Math.round(nutrients.VITB6A.quantity)}
+              {nutrients.VITB6A.unit}
+            </td>
+          </tr>
+          <tr>
+            <td>{nutrients.VITB12.label}</td>
+            <td>
+              {Math.round(nutrients.VITB12.quantity)}
+              {nutrients.VITB12.unit}
+            </td>
+          </tr>
+          <tr>
+            <td>{nutrients.VITD.label}</td>
+            <td>
+              {Math.round(nutrients.VITD.quantity)}
+              {nutrients.VITD.unit}
+            </td>
+          </tr>
+          <tr>
+            <td>{nutrients.VITK1.label}</td>
+            <td>
+              {Math.round(nutrients.VITK1.quantity)}
+              {nutrients.VITK1.unit}
+            </td>
+          </tr>
+          <tr>
+            <td>{nutrients.ZN.label}</td>
+            <td>
+              {Math.round(nutrients.ZN.quantity)}
+              {nutrients.ZN.unit}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  )
+}
+
+export default ExtraNutritionFacts

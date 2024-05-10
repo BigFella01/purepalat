@@ -1,0 +1,9 @@
+.icon {
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    .icon {
+        display: none;
+    }
+}

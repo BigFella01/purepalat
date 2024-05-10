@@ -1,0 +1,16 @@
+.inspirationSectionTitle {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 5rem;
+}
+
+.previewResultsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-items: center;
+    gap: 4rem;
+    margin-top: 2rem;
+    padding: 1rem;
+  }

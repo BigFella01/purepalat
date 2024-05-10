@@ -1,0 +1,13 @@
+.page {
+  background-image: linear-gradient(
+      rgba(36, 42, 46, 0.8),
+      rgba(36, 42, 46, 0.8)
+    ),
+    url('https://www.wholesomeyum.com/wp-content/uploads/2023/01/wholesomeyum-Steak-And-Eggs.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+}

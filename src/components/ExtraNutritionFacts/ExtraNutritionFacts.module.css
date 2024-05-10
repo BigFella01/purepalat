@@ -1,0 +1,21 @@
+.table {
+  background: black;
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+}
+
+caption {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.table caption,
+.table td {
+  padding: 1rem;
+  color: orange;
+}
+
+.table tr:nth-of-type(2n) {
+  background-color: #151515;
+}
